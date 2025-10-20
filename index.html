@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Gastos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Gastos</h1>
+    
+    <div class="form-container">
+      <input type="text" id="description" placeholder="Descrição">
+      <input type="number" id="amount" placeholder="Valor" min="0">
+      <select id="type">
+        <option value="income">Receita</option>
+        <option value="expense">Despesa</option>
+      </select>
+      <button id="add-btn">Adicionar</button>
+    </div>
+
+    <div class="summary">
+      <p>Total Receitas: <span id="total-income">0</span></p>
+      <p>Total Despesas: <span id="total-expense">0</span></p>
+      <p>Saldo: <span id="balance">0</span></p>
+    </div>
+
+    <ul id="transaction-list">
+      <!-- Transações aparecerão aqui -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
